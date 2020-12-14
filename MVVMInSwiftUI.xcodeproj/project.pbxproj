@@ -13,6 +13,10 @@
 		6099783625849B3800306C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099783525849B3800306C16 /* Assets.xcassets */; };
 		6099783925849B3800306C16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6099783825849B3800306C16 /* Preview Assets.xcassets */; };
 		6099783C25849B3800306C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6099783A25849B3800306C16 /* LaunchScreen.storyboard */; };
+		6099784525849BBC00306C16 /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099784425849BBC00306C16 /* FirstDetailView.swift */; };
+		6099784825849C8000306C16 /* FistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099784725849C8000306C16 /* FistViewModel.swift */; };
+		6099784B25849D8300306C16 /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099784A25849D8300306C16 /* FirstModel.swift */; };
+		6099784E25849E6200306C16 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099784D25849E6200306C16 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6099783825849B3800306C16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6099783B25849B3800306C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6099783D25849B3800306C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6099784425849BBC00306C16 /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
+		6099784725849C8000306C16 /* FistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FistViewModel.swift; sourceTree = "<group>"; };
+		6099784A25849D8300306C16 /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
+		6099784D25849E6200306C16 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 		6099782E25849B3600306C16 /* MVVMInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				6099782F25849B3600306C16 /* AppDelegate.swift */,
 				6099783125849B3600306C16 /* SceneDelegate.swift */,
+				6099782F25849B3600306C16 /* AppDelegate.swift */,
+				6099784725849C8000306C16 /* FistViewModel.swift */,
+				609978522584AA9300306C16 /* Model */,
+				609978532584AB2F00306C16 /* View */,
+				609978542584ABDE00306C16 /* ViewModel */,
 				6099783325849B3600306C16 /* ContentView.swift */,
 				6099783525849B3800306C16 /* Assets.xcassets */,
 				6099783A25849B3800306C16 /* LaunchScreen.storyboard */,
@@ -73,6 +85,30 @@
 				6099783825849B3800306C16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		609978522584AA9300306C16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6099784A25849D8300306C16 /* FirstModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		609978532584AB2F00306C16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6099784D25849E6200306C16 /* FirstView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		609978542584ABDE00306C16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6099784425849BBC00306C16 /* FirstDetailView.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6099784E25849E6200306C16 /* FirstView.swift in Sources */,
 				6099783025849B3600306C16 /* AppDelegate.swift in Sources */,
+				6099784825849C8000306C16 /* FistViewModel.swift in Sources */,
+				6099784525849BBC00306C16 /* FirstDetailView.swift in Sources */,
 				6099783225849B3600306C16 /* SceneDelegate.swift in Sources */,
+				6099784B25849D8300306C16 /* FirstModel.swift in Sources */,
 				6099783425849B3600306C16 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
